@@ -12,16 +12,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import ru.company.moviesmvvm.R;
 import ru.company.moviesmvvm.model.SearchModel;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHolder> {
-    List<SearchModel> movies;
+    ArrayList<SearchModel> movies;
     Context context;
 
-    public MovieAdapter(List<SearchModel> movies, Context context){
+    public MovieAdapter(ArrayList<SearchModel> movies, Context context){
         this.movies = movies;
         this.context = context;
     }
